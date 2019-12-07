@@ -31,7 +31,7 @@
                                                        
 # 原型
 
-![个人信息](https://github.com/yly49930454/album/blob/master/media/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png){:height="50%" width="50%"}
+![个人信息](https://github.com/yly49930454/album/blob/master/media/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png =200x)
 ![我的关系网](https://github.com/yly49930454/album/blob/master/media/%E6%88%91%E7%9A%84%E5%85%B3%E7%B3%BB%E7%BD%91.png){:height="50%" width="50%"}
 ![我的相册](https://github.com/yly49930454/album/blob/master/media/%E6%88%91%E7%9A%84%E7%9B%B8%E5%86%8C.png){:height="50%" width="50%"}
 ![聊天栏](https://github.com/yly49930454/album/blob/master/media/%E8%81%8A%E5%A4%A9%E6%A0%8F.png){:height="50%" width="50%"}
