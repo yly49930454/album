@@ -51,11 +51,82 @@
 
 
 
-# API 产品使用关键AI或 机器学习 之API的输出入展示
-## 使用水平
+# API的使用
+1. Azure 人脸API
+* HTTP方法：POST
+* 请求URL：https://<My Endpoint String>.com/face/v1.0/detect
+* API价值主张：人脸 API 可以检测图像中的人脸，并返回其位置的矩形坐标。 （可选）人脸检测可以提取一系列人脸相关的属性。
+* 请求代码实例：
+``` python
+import requests
+import json
 
-## 使用比较分析
+# set to your own subscription key value
+subscription_key = ‘’
+assert subscription_key
 
-## 使用后风险报告
+# replace <My Endpoint String> with the string from your endpoint URL
+face_api_url = ‘https://<My Endpoint String>.com/face/v1.0/detect’
 
-## 加分项
+image_url = ‘https://upload.wikimedia.org/wikipedia/commons/3/37/Dagestani_man_and_woman.jpg’
+
+headers = {‘Ocp-Apim-Subscription-Key’: subscription_key}
+
+params = {
+    ‘returnFaceId’: ‘true’,
+    ‘returnFaceLandmarks’: ‘false’,
+    ‘returnFaceAttributes’: ‘age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise’,
+}
+
+response = requests.post(face_api_url, params=params,
+                         headers=headers, json={“url”: image_url})
+print(json.dumps(response.json()))
+```
+
+* 面部识别返回实例
+``` javascript
+ {
+    “faceId”: “9b17fcf6-efaf-4d61-ba0c-45ac6a0763ca”,
+    “faceRectangle”: {
+      “top”: 101,
+      “left”: 96,
+      “width”: 218,
+      “height”: 307
+    },
+    “faceAttributes”: null,
+    “faceLandmarks”: null
+  },
+  {
+    “faceId”: “74262c17-184f-450d-88a7-fb110c7f3bde”,
+    “faceRectangle”: {
+      “top”: 286,
+      “left”: 728,
+      “width”: 96,
+      “height”: 120
+    },
+    “faceAttributes”: null,
+    “faceLandmarks”: null
+  },
+  {
+    “faceId”: “2dd9f0a9-5889-46f2-913d-bcb97ef8334d”,
+    “faceRectangle”: {
+      “top”: 296,
+      “left”: 385,
+      “width”: 86,
+      “height”: 116
+    },
+```
+
+* 人脸验证返回实例
+``` 
+{
+            “color”: “black”,
+            “confidence”: 0.98
+          }
+```
+
+
+
+
+
+
