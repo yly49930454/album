@@ -30,16 +30,23 @@
 
                                                        
 # 原型
-
+### 个人信息
+* 你可以在个人信息页面对自己的信息和同学录进行编辑，并且分享你的同学录，让你的同学也加入进来
 ![个人信息](https://github.com/yly49930454/album/blob/master/media/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png)
-![我的关系网](https://github.com/yly49930454/album/blob/master/media/%E6%88%91%E7%9A%84%E5%85%B3%E7%B3%BB%E7%BD%91.png)
+
+### 我的相册
+* 你可以在此处观看你上传的照片到你设置的文件夹里，你随时可以查看你上传的照片
 ![我的相册](https://github.com/yly49930454/album/blob/master/media/%E6%88%91%E7%9A%84%E7%9B%B8%E5%86%8C.png)
+
+### 我的关系网
+* 你可以在此处看有多少同学在你同学录里，会成为一个关系网，你可以通过右下角的查找查询「可能」有你存在的照片
+![我的关系网](https://github.com/yly49930454/album/blob/master/media/%E6%88%91%E7%9A%84%E5%85%B3%E7%B3%BB%E7%BD%91.png)
+
+### 聊天栏
+* 当你找到你的老同学，你可以给他发信息，交换号码，立刻就可以交流
 ![聊天栏](https://github.com/yly49930454/album/blob/master/media/%E8%81%8A%E5%A4%A9%E6%A0%8F.png)
 
-## 交互及界面设计
-## 信息设计
-## 原型文档
-## 口头操作说明
+
 
 
 
